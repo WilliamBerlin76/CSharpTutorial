@@ -7,16 +7,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var myAccount = new BankAccount("William", 1000);
 
-            var names = new List<string> { "<name>", "Boobie", "Bobby" };
-
-            names.Add("frank");
-            names.Remove("<name>");
-            
-            foreach (string name in names)
-            {
-                Console.WriteLine($"Hello {name}");
-            }
+            Console.WriteLine($"Account {myAccount.Owner} with {myAccount.Balance}");
         }
     }
 }
